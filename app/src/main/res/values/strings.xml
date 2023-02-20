@@ -2,7 +2,7 @@
     <string name="app_name">ProjetKotlin</string>
 
     <string name="home_info">Info</string>
-    <string name="home_produits">Produits</string>
+    <string name="home_products">Produits</string>
     
     <!-- GroupInfos Button-->
     <string name="student_button1">Etudiant 1</string>

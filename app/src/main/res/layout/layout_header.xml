@@ -7,12 +7,12 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:background="@color/blue"
-        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="60dp">
         <TextView
             android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
+            android:textColor="@color/white"
             android:layout_height="60dp"
             android:gravity="center"
             android:textAllCaps="true"
@@ -24,7 +24,9 @@
             android:visibility="gone"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:padding="8dp"
             app:srcCompat="@drawable/arrow_back" />
+
     </RelativeLayout>
 
 </LinearLayout>
