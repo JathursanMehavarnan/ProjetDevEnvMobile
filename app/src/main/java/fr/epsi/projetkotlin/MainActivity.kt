@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.View
+import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,5 +17,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(newIntent)
             finish()
         },2000)
+    }
+
+    fun showBack(){
+        val imageViewBack=findViewById<ImageView>(R.id.imageViewBack)
+        imageViewBack.visibility= View.VISIBLE
+        imageViewBack.setOnClickListener(View.OnClickListener {
+            finish()
+        })
     }
 }
