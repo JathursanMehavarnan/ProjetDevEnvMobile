@@ -28,9 +28,9 @@
                 android:text="@string/home_info" />
 
             <Button
-                android:id="@+id/buttonProduits"
+                android:id="@+id/buttonProducts"
                 style="@style/buttonsHome"
-                android:text="@string/home_produits" />
+                android:text="@string/home_products" />
 
         </LinearLayout>
     </ScrollView>
