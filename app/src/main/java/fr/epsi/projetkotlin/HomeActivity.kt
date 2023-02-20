@@ -1,6 +1,5 @@
 package fr.epsi.projetkotlin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class HomeActivity : MainActivity() {
@@ -10,5 +9,4 @@ class HomeActivity : MainActivity() {
 
         setHeaderTxt("Epsi")
     }
-
 }

@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:background="@color/blue"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="60dp">
         <TextView
@@ -18,12 +19,12 @@
             android:textStyle="bold"
             android:textSize="28sp" />
 
-        <!--<ImageView
+        <ImageView
             android:id="@+id/imageViewBack"
             android:visibility="gone"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/icon_back" />-->
+            app:srcCompat="@drawable/arrow_back" />
     </RelativeLayout>
 
 </LinearLayout>
