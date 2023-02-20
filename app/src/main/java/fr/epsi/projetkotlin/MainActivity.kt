@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.TextView
+import android.view.View
+import android.widget.ImageView
 
 open class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,5 +24,13 @@ open class MainActivity : AppCompatActivity() {
     fun setHeaderTxt(txt:String) {
         val textViewTitle = findViewById<TextView>(R.id.textViewTitle)
         textViewTitle.setText(txt)
+    }
+
+    fun showBack(){
+        val imageViewBack=findViewById<ImageView>(R.id.imageViewBack)
+        imageViewBack.visibility= View.VISIBLE
+        imageViewBack.setOnClickListener(View.OnClickListener {
+            finish()
+        })
     }
 }

@@ -3,4 +3,9 @@
 
     <string name="home_info">Info</string>
     <string name="home_produits">Produits</string>
+    
+    <!-- GroupInfos Button-->
+    <string name="student_button1">Etudiant 1</string>
+    <string name="student_button2">Etudiant 2</string>
+    <string name="student_button3">Etudiant 3</string>
 </resources>
