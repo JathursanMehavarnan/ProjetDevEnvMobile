@@ -24,12 +24,12 @@
 
             <Button
                 android:id="@+id/buttonInfo"
-                style="@style/buttonsHome"
+                style="@style/buttons"
                 android:text="@string/home_info" />
 
             <Button
                 android:id="@+id/buttonProduits"
-                style="@style/buttonsHome"
+                style="@style/buttons"
                 android:text="@string/home_products" />
 
         </LinearLayout>

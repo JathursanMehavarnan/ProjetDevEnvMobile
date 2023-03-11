@@ -11,14 +11,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class ProduitsAdapter(val context: Context, val produits: ArrayList<Produits>) :
-    RecyclerView.Adapter<ProduitsAdapter.ViewHolder>() {
+class ProductsAdapter(val context: Context, val produits: ArrayList<Produits>) :
+    RecyclerView.Adapter<ProductsAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val infoProduitsContainer = view.findViewById<LinearLayout>(R.id.infoProduitContainer)
-        val imageViewProduit = view.findViewById<ImageView>(R.id.imageProduit)
-        val textViewProduitName = view.findViewById<TextView>(R.id.produitName)
-        val textViewProduitDesc = view.findViewById<TextView>(R.id.produitDesc)
+        val infoProduitsBlock = view.findViewById<LinearLayout>(R.id.infoProduitBlock)
+        val imageViewProduit = view.findViewById<ImageView>(R.id.imgProduct)
+        val textViewproductName = view.findViewById<TextView>(R.id.productName)
+        val textViewproductDescription = view.findViewById<TextView>(R.id.productDescription)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -29,11 +29,11 @@ class ProduitsAdapter(val context: Context, val produits: ArrayList<Produits>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val produit = produits.get(position)
-        holder.textViewProduitName.text = produit.name
+        holder.textViewproductName.text = produit.name
         Picasso.get().load(produit.picture_url).into(holder.imageViewProduit)
-        holder.textViewProduitDesc.text = produit.description
-        holder.infoProduitsContainer.setOnClickListener(View.OnClickListener {
-            val intent = Intent(context, DetailProduitActivity::class.java)
+        holder.textViewproductDescription.text = produit.description
+        holder.infoProduitsBlock.setOnClickListener(View.OnClickListener {
+            val intent = Intent(context, DetailProductActivity::class.java)
             intent.putExtra("name", produit.name)
             intent.putExtra("description", produit.description)
             intent.putExtra("picture_url", produit.picture_url)

@@ -18,7 +18,7 @@ class CategoryActivity : MainActivity() {
 
         val categories = arrayListOf<Category>()
 
-        val recyclerviewCategorie = findViewById<RecyclerView>(R.id.recyclerviewProduit)
+        val recyclerviewCategorie = findViewById<RecyclerView>(R.id.recyclerviewProduct)
         recyclerviewCategorie.layoutManager = LinearLayoutManager(this)
         val categoriesAdapter = CategoryAdapter(application, categories)
         recyclerviewCategorie.adapter = categoriesAdapter

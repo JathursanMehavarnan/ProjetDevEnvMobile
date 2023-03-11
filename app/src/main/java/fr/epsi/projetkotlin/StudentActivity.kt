@@ -22,6 +22,14 @@ class StudentActivity : MainActivity() {
 
         val name = findViewById<TextView>(R.id.nameStudent)
         val mail = findViewById<TextView>(R.id.mailStudent)
+
+        val url = findViewById<TextView>(R.id.urlProfileStudent)
+        url.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url.text.toString())
+            startActivity(intent)
+        }
+
         val avatar = findViewById<ImageView>(R.id.imageView)
 
         if (setNameBtn == "Rouchaud"){
@@ -34,18 +42,18 @@ class StudentActivity : MainActivity() {
         if (setNameBtn == "Mehavarnan"){
             name.text = "Jathursan Mehavarnan"
             mail.text = "j.mehavarnan@epsi.fr"
-            mail.text = "j.mehavarnan@epsi.fr"
+            url.text = "https://www.linkedin.com/in/j-mehavarnan/"
             avatar.setImageDrawable(getResources().getDrawable(R.drawable.jathur))
 
         }
 
-        val urlProfile = findViewById<TextView>(R.id.urlProfile)
+        /*val urlProfile = findViewById<TextView>(R.id.urlProfile)
         urlProfile.setOnClickListener(View.OnClickListener {
             val url = "https://www.epsi.fr/"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
-        })
+        })*/
 
     }
 }

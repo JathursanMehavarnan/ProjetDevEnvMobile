@@ -18,17 +18,17 @@
 
         <Button
             android:id="@+id/buttonStudent1"
-            style="@style/buttonsHome"
+            style="@style/buttons"
             android:text="@string/student_button1"/>
 
         <Button
             android:id="@+id/buttonStudent2"
-            style="@style/buttonsHome"
+            style="@style/buttons"
             android:text="@string/student_button2"/>
 
         <Button
             android:id="@+id/buttonStudent3"
-            style="@style/buttonsHome"
+            style="@style/buttons"
             android:text="@string/student_button3"/>
     </LinearLayout>
 </LinearLayout>

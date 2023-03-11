@@ -12,7 +12,7 @@ class CategoryAdapter(val context: Context, val categories: ArrayList<Category>)
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val textViewCategorieTitle = view.findViewById<Button>(R.id.produitName)
+        val textViewCategorieTitle = view.findViewById<Button>(R.id.productName)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -25,7 +25,7 @@ class CategoryAdapter(val context: Context, val categories: ArrayList<Category>)
         val categorie = categories.get(position)
         holder.textViewCategorieTitle.text = categorie.title
         holder.textViewCategorieTitle.setOnClickListener(View.OnClickListener {
-            val intent = Intent(context, ProduitsActivity::class.java)
+            val intent = Intent(context, ProductsActivity::class.java)
             intent.putExtra("title", categorie.title)
             intent.putExtra("product_url", categorie.products_url)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

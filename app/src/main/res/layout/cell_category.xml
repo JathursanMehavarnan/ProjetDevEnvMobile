@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/produitName"
-        style="@style/buttonsHome"
+        android:id="@+id/productName"
+        style="@style/buttons"
         android:text="@string/title" />
 </LinearLayout>

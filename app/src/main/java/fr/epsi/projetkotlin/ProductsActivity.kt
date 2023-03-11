@@ -8,7 +8,7 @@ import okhttp3.*
 import org.json.JSONObject
 import java.io.IOException
 
-class ProduitsActivity : MainActivity() {
+class ProductsActivity : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_produits)
@@ -18,10 +18,10 @@ class ProduitsActivity : MainActivity() {
 
         val produits = arrayListOf<Produits>()
 
-        val recyclerviewProduit = findViewById<RecyclerView>(R.id.recyclerviewProduit)
-        recyclerviewProduit.layoutManager = LinearLayoutManager(this)
-        val produitsAdapter = ProduitsAdapter(application, produits)
-        recyclerviewProduit.adapter = produitsAdapter
+        val recyclerviewProduct = findViewById<RecyclerView>(R.id.recyclerviewProduct)
+        recyclerviewProduct.layoutManager = LinearLayoutManager(this)
+        val productsAdapter = ProductsAdapter(application, produits)
+        recyclerviewProduct.adapter = productsAdapter
 
         val okHttpClient: OkHttpClient = OkHttpClient.Builder().build()
         val mRequestUrl = intent.extras!!.getString("product_url", "")
@@ -45,7 +45,7 @@ class ProduitsActivity : MainActivity() {
                         produits.add(produit)
                     }
                     runOnUiThread(Runnable {
-                        produitsAdapter.notifyDataSetChanged()
+                        productsAdapter.notifyDataSetChanged()
                     })
 
                     Log.e("WS", data)
