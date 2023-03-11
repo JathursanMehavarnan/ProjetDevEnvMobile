@@ -1,8 +1,23 @@
 <resources>
     <string name="app_name">ProjetKotlin</string>
 
-    <!-- GroupInfos Button-->
+    <string name="home_info">Info</string>
+    <string name="home_products">Produits</string>
+
+    <string name="student_title_student">Info</string>
+
     <string name="student_button1">Etudiant 1</string>
     <string name="student_button2">Etudiant 2</string>
     <string name="student_button3">Etudiant 3</string>
+
+    <string name="nameStudent">Barral Thibault</string>
+    <string name="mailStudent">thibault.barral@epsi.fr</string>
+    <string name="groupStudent">Group 1</string>
+    <string name="urlProfileStudent">https://www.linkedin.com/in/thibaultbarral/</string>
+
+
+    <string name="products_url">Products_url</string>
+    <string name="title">Title</string>
+    <string name="categorie">Categorie</string>
+    <string name="description">Description :</string>
 </resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".StudentActivity">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_header" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="top"
+        android:src="@drawable/thibault" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/student_title_student"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/student_title_student"
+            android:textAppearance="@style/InfoStudent"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/nameStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nameStudent"
+            android:textAppearance="@style/InfoStudent"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/mailStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/mailStudent"
+            android:textAlignment="center"
+            android:textAppearance="@style/InfoStudent" />
+
+        <TextView
+            android:id="@+id/groupStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/groupStudent"
+            android:textAppearance="@style/InfoStudent"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/urlProfileStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="@string/urlProfileStudent"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

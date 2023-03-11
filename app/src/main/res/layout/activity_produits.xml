@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
-
+    tools:context=".ProductsActivity">
 
     <include
         layout="@layout/layout_header"
@@ -20,18 +18,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
 
-            <Button
-                android:id="@+id/buttonInfo"
-                style="@style/buttons"
-                android:text="@string/home_info" />
-
-            <Button
-                android:id="@+id/buttonProduits"
-                style="@style/buttons"
-                android:text="@string/home_products" />
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </LinearLayout>
     </ScrollView>
 
