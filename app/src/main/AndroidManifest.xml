@@ -33,6 +33,9 @@
             android:name=".GroupInfosActivity"
             android:exported="false" />
         <activity
+            android:name=".GroupInfosActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

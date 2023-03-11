@@ -20,9 +20,4 @@
     <string name="title">Title</string>
     <string name="categorie">Categorie</string>
     <string name="description">Description :</string>
-
-    <!--<string name="products_url">Products_url</string>
-    <string name="title">Title</string>
-    <string name="categorie">Categorie</string>
-    <string name="description">Description :</string>-->
 </resources>
