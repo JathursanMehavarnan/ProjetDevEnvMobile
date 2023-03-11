@@ -15,6 +15,12 @@
     <string name="groupStudent">Group 1</string>
     <string name="urlProfile">https://www.epsi.fr/</string>
 
+
+    <string name="products_url">Products_url</string>
+    <string name="title">Title</string>
+    <string name="categorie">Categorie</string>
+    <string name="description">Description :</string>
+
     <!--<string name="products_url">Products_url</string>
     <string name="title">Title</string>
     <string name="categorie">Categorie</string>

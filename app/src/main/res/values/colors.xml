@@ -4,4 +4,5 @@
     <color name="white">#FFF8F0</color>
     <color name="black">#FF000000</color>
     <color name="blue">#19647E</color>
+    <color name="border_color">@color/black</color>
 </resources>

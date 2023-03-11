@@ -10,22 +10,19 @@ class HomeActivity : MainActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         val buttonInfo = findViewById<Button>(R.id.buttonInfo)
+        val buttonProduits = findViewById<Button>(R.id.buttonProduits)
 
         setHeaderTxt("Epsi")
-
-        /*buttonInfo.setOnClickListener(View.OnClickListener {
-            startGroupInfosActivity(getString(R.string.home_info))
-        })*/
 
         buttonInfo.setOnClickListener(View.OnClickListener {
             val intent = Intent(application, GroupInfosActivity::class.java)
             startActivity(intent)
         })
-    }
 
-    /*private fun startGroupInfosActivity(title: String) {
-        val intent = Intent(application, GroupInfosActivity::class.java)
-        intent.putExtra("title", title)
-        startActivity(intent)
-    }*/
+        buttonProduits.setOnClickListener(View.OnClickListener {
+            val intent = Intent(application, CategoryActivity::class.java)
+            startActivity(intent)
+        })
+
+    }
 }
